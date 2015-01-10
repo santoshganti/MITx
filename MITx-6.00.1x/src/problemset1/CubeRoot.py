@@ -3,7 +3,10 @@ Created on 10-Jan-2015
 
 @author: santoshganti
 
-Find the cube root of perfect cube
+Find the cube root of perfect cube 
+
+cons:
+Only works for positive numbers
 '''
 x = int(raw_input('Enter an integer:'))
 ans = 0

@@ -7,7 +7,9 @@ x = float(raw_input('Enter the decimal number between 0 and 1 : '))
 
 p = 0
 while ((2 ** p) * x) % 1 != 0:
-    print ('Remainder=' + str((2 ** p) * x - int((2 ** p) * x)))
+    #Floating point part - integer part
+    print ('Remainder=' + str((2 ** p) * x - int((2 ** p) * x))) 
+    
     p += 1
     
 num = int(x * (2 ** p))

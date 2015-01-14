@@ -4,7 +4,7 @@ Created on 14-Jan-2015
 @author: santoshganti
 Assume s is a string of lower case characters.
 
-Write a program that prints the longest substring of s in 
+Write a program that prints the longestSubstring substring of s in 
 which the letters occur in alphabetical order. For example, 
 if s = 'azcbobobegghakl', then your program should print
 
@@ -15,10 +15,14 @@ For example, if s = 'abcbcd', then your program should print
 Longest substring in alphabetical order is: abc
 
 '''
-def isInAlphabeticalOrder(word):
-    for i in range(len(word) - 1):
-        if word[i] > word[i + 1]:
-            return False
-    return True
-
-print isInAlphabeticalOrder('abcd')
+s = 'azcbobobegghakl'
+StringSlice = s[0]
+longestSubstring = s[0]
+for i in range(1, len(s)):
+    if s[i] >= StringSlice[-1]:
+        StringSlice += s[i]
+        if len(StringSlice) > len(longestSubstring):
+            longestSubstring = StringSlice
+    else:
+        StringSlice = s[i]
+print 'Longest substring in alphabetical order is:', longestSubstring

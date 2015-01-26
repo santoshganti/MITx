@@ -16,7 +16,7 @@ print 2
 print 'Hello!'
 x = 10
 for num in range(5):
-    if x % 2 == 0 and x>0:
+    if x % 2 == 0 and x > 0:
             print x
             x -= 2
     

@@ -18,4 +18,4 @@ def isitIn(char, aStr):
             return isitIn(char, aStr[len(aStr) // 2:])
     return isitIn(char, aStr)
 
-print isitIn('a','santosh')
+print isitIn('a', 'santosh')

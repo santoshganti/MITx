@@ -6,7 +6,7 @@ Created on 17-Jan-2015
 balance = 999999
 annualInterestRate = 0.18
 monthlyPayment = 0
-monthlyInterestRate = annualInterestRate /12
+monthlyInterestRate = annualInterestRate / 12
 newbalance = balance - 10
 
 while newbalance > 0:
@@ -19,5 +19,5 @@ while newbalance > 0:
         interest = monthlyInterestRate * newbalance
         newbalance += interest
         month += 1
-    newbalance = round(newbalance,2)
+    newbalance = round(newbalance, 2)
 print " Lowest Payment:", monthlyPayment

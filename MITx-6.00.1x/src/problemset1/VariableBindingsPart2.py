@@ -6,12 +6,12 @@ Created on 13-Jan-2015
 # From Lecture 4, How Environments Separate Variable Bindings
 
 def square(x):
-    return x*x
+    return x * x
 
-def twoPower(x,n):
+def twoPower(x, n):
     while n > 1:
         x = square(x)
-        n = n/2
+        n = n / 2
     return x
 
-print twoPower(2,4)
+print twoPower(2, 4)

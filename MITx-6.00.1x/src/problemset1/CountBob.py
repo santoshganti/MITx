@@ -12,11 +12,11 @@ Number of times bob occurs is: 2
 
 '''
 s = 'obooubyobnoboboottobobobobobvobobgobob'
-bob=0
-for x,element in enumerate(s):
-    if s[x:x+3] == 'bob':
-        bob+=1
+bob = 0
+for x, element in enumerate(s):
+    if s[x:x + 3] == 'bob':
+        bob += 1
  
-print "Number of times bob occurs is: " +str(bob)
+print "Number of times bob occurs is: " + str(bob)
 
 

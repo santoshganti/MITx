@@ -28,12 +28,12 @@ def findRoot3(x, power, epsilon):
 def testFindRoot():
     epsilon = 0.0001
     for x in (0.25, -0.25, 2, -2, 8, -8):
-        for power in range(1,4):
-            print('Testing x = ' + str(x) +\
+        for power in range(1, 4):
+            print('Testing x = ' + str(x) + \
                   ' and power = ' + str(power))
             res = findRoot3(x, power, epsilon)
             if res == None:
                 print('    No root')
             else:
-                print('    ' + str(res**power) + ' ~= ' + str(x))
+                print('    ' + str(res ** power) + ' ~= ' + str(x))
 testFindRoot()

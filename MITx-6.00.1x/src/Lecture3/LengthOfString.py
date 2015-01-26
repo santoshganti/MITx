@@ -12,7 +12,7 @@ def lenIter(aStr):
     # Your code here
     length = 0
     for i in aStr:
-        length+=1
+        length += 1
     return length
     
 print lenIter('hello')

@@ -7,4 +7,4 @@ def clip(lo, x, hi):
      - x, otherwise
     '''
     # Your code here
-    return max(lo,min(x,hi)) 
+    return max(lo, min(x, hi)) 

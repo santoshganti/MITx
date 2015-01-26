@@ -11,12 +11,23 @@ def isWordGuessed(secretWord, lettersGuessed):
       False otherwise
     '''
     # FILL IN YOUR CODE HERE..
+#     for c in secretWord:
+#         matched = [l for l in lettersGuessed if c == l]
+#         if len(matched) == 0:
+#             return False
+#         
+#     return True
+    
     for c in secretWord:
-        matched = [l for l in lettersGuessed if c == l]
-        if len(matched) == 0:
-            return False
-        
-    return True
+            match =[]
+            for l in lettersGuessed:
+                if c == l:
+                    match.append(l)
+    print match            
+    if len(match) == 0:
+        return False
+    else:
+        return True
 
 print isWordGuessed('apple', ['a', 'e', 'i', 'k', 'p', 'r', 's'])
 # print isWordGuessed('durian', ['h', 'a', 'c', 'd', 'i', 'm', 'n', 'r', 't', 'u'])

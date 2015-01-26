@@ -11,7 +11,7 @@ end to be 6, your code should print out the result
 end = 6
 
 for num in reversed(range(end)):
-        end = end+num
+        end = end + num
         
 print end
         

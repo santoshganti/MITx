@@ -5,7 +5,7 @@ Created on 22-Jan-2015
 '''
 def f(x):
     import math
-    return 10*math.e**(math.log(0.5)/5.27 * x)
+    return 10 * math.e ** (math.log(0.5) / 5.27 * x)
 
 def radiationExposure(start, stop, step):
     '''
@@ -25,9 +25,9 @@ def radiationExposure(start, stop, step):
     # FILL IN YOUR CODE HERE...
     rad = 0
     count = start
-    while count< stop:
-        rad+=step*f(count)
-        count+=step
+    while count < stop:
+        rad += step * f(count)
+        count += step
     return rad
   
 

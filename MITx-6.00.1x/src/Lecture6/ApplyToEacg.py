@@ -10,13 +10,13 @@ def applyEachTo(L, x):
     return result
 
 def square(a):
-    return a*a
+    return a * a
 
 def halve(a):
-    return a/2
+    return a / 2
 
 def inc(a):
-    return a+1
+    return a + 1
 
 print applyEachTo([inc, square, halve, abs], -3)
 print applyEachTo([inc, square, halve, abs], 3.0)

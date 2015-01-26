@@ -8,6 +8,6 @@ def square(x):
     x: int or float.
     
     '''
-    return x*x
+    return x * x
 
 print square(2)

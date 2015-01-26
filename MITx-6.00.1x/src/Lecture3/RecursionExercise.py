@@ -3,7 +3,7 @@ Created on 22-Jan-2015
 
 @author: santoshganti
 '''
-def isIn(char,aStr):
+def isIn(char, aStr):
    
   
     
@@ -12,11 +12,11 @@ def isIn(char,aStr):
     mid = aStr[len(aStr) // 2]
     if char == mid:
         return True
-    elif len(aStr)==1:
+    elif len(aStr) == 1:
         return False
     elif char < mid:
-        return isIn(char,aStr[:len(aStr)//2])
+        return isIn(char, aStr[:len(aStr) // 2])
     else:
-        return isIn(char,aStr[len(aStr)//2:])
-    return isIn(char,aStr)    
-print isIn('a','Santosh')
+        return isIn(char, aStr[len(aStr) // 2:])
+    return isIn(char, aStr)    
+print isIn('a', 'Santosh')

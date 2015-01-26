@@ -10,11 +10,11 @@ month = 1
 totalPaid = 0
 while month < 13:
     print "Month: " + str(month)
-    print "Minimum monthly payment: " + str(round(balance*monthlyPaymentRate, 2))
-    totalPaid+= (balance*monthlyPaymentRate)
-    balance = (balance - (balance*monthlyPaymentRate))*(1+(annualInterestRate/12))
+    print "Minimum monthly payment: " + str(round(balance * monthlyPaymentRate, 2))
+    totalPaid += (balance * monthlyPaymentRate)
+    balance = (balance - (balance * monthlyPaymentRate)) * (1 + (annualInterestRate / 12))
     print "Remaining balance: " + str(round(balance, 2))
     month += 1
     if(month == 13):
-        print "Total Paid:" +str(round(totalPaid,2))
-        print "Remaining balance: "+str(round(balance,2))
+        print "Total Paid:" + str(round(totalPaid, 2))
+        print "Remaining balance: " + str(round(balance, 2))

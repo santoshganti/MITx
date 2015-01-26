@@ -47,6 +47,6 @@ def f(x, y):
     x + y - 2
    
 print a(a(a(6)))
-print c(a(1),b(1))
-print d('apple',11.1)
+print c(a(1), b(1))
+print d('apple', 11.1)
 print e(a(3), b(4), c(3, 4))

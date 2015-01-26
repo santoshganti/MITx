@@ -11,11 +11,11 @@ def isVowel(char):
     '''
     # Your code here
     y = char.lower()
-    x = y =='a' or y == 'e' or y == 'i' or y == 'o' or y == 'u'
+    x = y == 'a' or y == 'e' or y == 'i' or y == 'o' or y == 'u'
     return x
 
 def isVowel2(char):
-    x=char.lower()
+    x = char.lower()
     return x in ('aeiou')
 
 

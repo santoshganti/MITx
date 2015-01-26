@@ -10,7 +10,7 @@ monthlyInterestRate = annualInterestRate / 12
 lowerBound = balance / 12
 upperBound = (balance * (1 + annualInterestRate / 12) ** 12) / 12
 originalBalance = balance
-lowestBalance = 0.01 # Error margin e.g. $0.01
+lowestBalance = 0.01  # Error margin e.g. $0.01
 
 # Keep testing new payment values until the balance is +/- lowestBalance
 while abs(balance) > lowestBalance:

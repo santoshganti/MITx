@@ -19,7 +19,7 @@ def isWordGuessed(secretWord, lettersGuessed):
 #     return True
     
     for c in secretWord:
-            match =[]
+            match = []
             for l in lettersGuessed:
                 if c == l:
                     match.append(l)

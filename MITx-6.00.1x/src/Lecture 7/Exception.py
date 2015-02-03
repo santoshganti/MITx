@@ -11,4 +11,4 @@ def divide(x,y):
     finally:
         print "executing finally clause"
 
-divide('3','3')
+divide('3', '3')
